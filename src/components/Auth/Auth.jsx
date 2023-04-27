@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { AiFillGithub, AiFillChrome } from "react-icons/ai";
+// import { AiFillGithub } from "react-icons/ai";
+// AiFillChrome
 import Styles from './index.module.scss';
 import axios from 'axios';
 import { useStore } from "../../store.js";
@@ -43,10 +44,12 @@ function AuthComponent() {
             </div>
             <div className={Styles.signUpWrap}>
                 <div className={Styles.githubWrap} onClick={githubClick}>
-                    <AiFillGithub className={Styles.githubIcon} /> <span className={Styles.githubText}>使用GitHub注册</span>
+                    {/* <AiFillGithub className={Styles.githubIcon} />  */}
+                    <span className={Styles.githubText}>使用GitHub注册</span>
                 </div>
                 <div className={Styles.googleWrap} onClick={googleClick}>
-                    <AiFillChrome className={Styles.googleIcon} /> <span className={Styles.googleText}>使用Google注册</span>
+                    {/* <AiFillChrome className={Styles.googleIcon} />  */}
+                    <span className={Styles.googleText}>使用Google注册</span>
                 </div>
             </div>
         </div>
