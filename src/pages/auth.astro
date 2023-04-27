@@ -1,0 +1,13 @@
+---
+import { Icon } from "astro-icon";
+import EmptyLayout from "@layouts/emptyLayout.astro";
+import Container from "@components/container.astro";
+import AuthComponent from "@components/Auth/Auth.jsx";
+---
+
+<EmptyLayout>
+  <div
+    class="flex justify-center items-center h-screen w-screen bg-fuchsia-100">
+    <AuthComponent client:load />
+  </div>
+</EmptyLayout>
