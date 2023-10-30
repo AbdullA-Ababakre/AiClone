@@ -1,14 +1,13 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/hero.png";
+import heroImage from "assets/heroHome.png";
 import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon";
 ---
 
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="py-6 md:order-1 hidden md:block">
-    <!-- <Picture
+    <Picture
       src={heroImage}
       alt="Astronaut in the air"
       widths={[200, 400, 600]}
@@ -16,24 +15,19 @@ import { Icon } from "astro-icon";
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
       format="avif"
-    /> -->
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/5YkZIVeAQAA"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
+    />
   </div>
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      您的ChatGpt AI 智能助理
+      Chatbots with a Personal Touch
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      释放您的生产力潜力，简化您的文稿撰写 过程，并使用 Monica 重获时间。<wbr />
-      立即尝试 Monica，体验 ChatGPT 提供动力的 AI 助手的强大功能！
+      Designed to provide a unique and personalized experience to users.
+      Whether you are individuals or businesses, our chatbots go beyond
+      automated responses. They are meticulously crafted to understand and
+      reflect the individual personalities and preferences of the users
+      they interact with.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
@@ -42,9 +36,7 @@ import { Icon } from "astro-icon";
         target="_blank"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="openmoji:chrome" />
-
-        添加到chrome
+        Build your chatbot 
       </Link>
       <!-- <Link
         size="lg"

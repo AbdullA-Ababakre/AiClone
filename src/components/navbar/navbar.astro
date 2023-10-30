@@ -6,32 +6,32 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import { Icon } from "astro-icon";
 
 const menuitems = [
-  {
-    title: "Features",
-    path: "#",
-    // children: [
-    //   { title: "Action", path: "/" },
-    //   { title: "Another action", path: "#" },
-    //   { title: "Dropdown Submenu", path: "#" },
-    //   { title: "404 Page", path: "/404" },
-    // ],
-  },
-  {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
-    title: "About",
-    path: "/about",
-  },
-  {
-    title: "Blog",
-    path: "/blog",
-  },
-  {
-    title: "Contact",
-    path: "/contact",
-  },
+  // {
+  //   title: "Features",
+  //   path: "#",
+  //   // children: [
+  //   //   { title: "Action", path: "/" },
+  //   //   { title: "Another action", path: "#" },
+  //   //   { title: "Dropdown Submenu", path: "#" },
+  //   //   { title: "404 Page", path: "/404" },
+  //   // ],
+  // },
+  // {
+  //   title: "Pricing",
+  //   path: "/pricing",
+  // },
+  // {
+  //   title: "About",
+  //   path: "/about",
+  // },
+  // {
+  //   title: "Blog",
+  //   path: "/blog",
+  // },
+  // {
+  //   title: "Contact",
+  //   path: "/contact",
+  // },
 ];
 ---
 
@@ -51,7 +51,7 @@ const menuitems = [
         </div>
       </div>
       <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
+        <!-- <ul class="flex flex-col lg:flex-row lg:gap-3">
           {
             menuitems.map((item, index) => (
               <>
@@ -75,7 +75,7 @@ const menuitems = [
               </>
             ))
           }
-        </ul>
+        </ul> -->
         <div class="lg:hidden flex items-center mt-3 gap-4">
           <Link href="#" style="muted" block size="md">Log in</Link>
           <Link href="/#" size="md" block>Sign up</Link>
@@ -83,10 +83,10 @@ const menuitems = [
       </MenuItems>
     </Astronav>
     <div>
-      <div class="hidden lg:flex items-center gap-4">
+      <!-- <div class="hidden lg:flex items-center gap-4">
         <a href="#">Log in</a>
         <Link href="/auth" size="md">Sign up</Link>
-      </div>
+      </div> -->
     </div>
   </header>
 </Container>
